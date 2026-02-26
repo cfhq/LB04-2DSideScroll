@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Background
-  - Obstacle
-  - Ground
+  - Trap
   layers:
   - Default
   - TransparentFX

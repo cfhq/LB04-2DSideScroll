@@ -55,10 +55,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 1f66dacfa615ddd498c4e7c0923e7fd3, type: 2}
+    m_Data: {fileID: 11400000, guid: 59fb5568faa0d36428f6f82c6897b5bf, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 4158842819825884409, guid: fb08cba2f54df5843aa21068ce3f5e92, type: 3}
+    m_Data: {fileID: -1004011519, guid: fb08cba2f54df5843aa21068ce3f5e92, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
@@ -125,8 +125,6 @@ TilemapRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -148,7 +146,6 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -205,7 +202,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &1594782325454820508
+--- !u!114 &1289453710605639422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
