@@ -10,7 +10,7 @@ public class PlayerPositionHandler : MonoBehaviour
 
     public void OnCheckpoint(GameObject col) // col : checkpoint yg mau diambil
     {
-        Debug.Log("col itu adalah : " +  col.transform.position);
+        //Debug.Log("col itu adalah : " +  col.transform.position);
         Vector2 newCheckpointPosition = col.transform.position;
         currentCheckpointPos = newCheckpointPosition;
         SavePosition(newCheckpointPosition);
@@ -18,7 +18,7 @@ public class PlayerPositionHandler : MonoBehaviour
 
     public void OnEnemy()
     {
-        Debug.Log("curr posss");
+        //Debug.Log("curr posss");
         ChangePlayerPos(currentCheckpointPos);
     }
 
