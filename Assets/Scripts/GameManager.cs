@@ -83,5 +83,15 @@ public class GameManager : MonoBehaviour
         levelCurrent = levelData.Level;
     }
 
+    public void CheckLevel()
+    {
+        LoadLevel();
+    }
+
+    public void ChangeLevel(int newLevelUnlocked)
+    {
+        levelCurrent = newLevelUnlocked;
+        SaveLevel();
+    }
     # endregion
 }

@@ -22,9 +22,10 @@ public class PlayerPositionHandler : MonoBehaviour
         ChangePlayerPos(currentCheckpointPos);
     }
 
-    public void OnFinish()
+    public void OnFinish(int newLevelUnlocked)
     {
-        // diisi kalo udh punya game manager
+        GameManager.Instance.ChangeScene(0);
+        GameManager.Instance.ChangeLevel(newLevelUnlocked);
     }
 
     #endregion
