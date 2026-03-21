@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        Debug.Log(horizontalInput);
+        //Debug.Log(horizontalInput);
 
         var x = horizontalInput * speed * Time.deltaTime;
         var xyz = new Vector3(x, 0f, 0f);

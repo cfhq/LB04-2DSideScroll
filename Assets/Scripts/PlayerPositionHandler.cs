@@ -3,14 +3,12 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class PlayerPositionHandler : MonoBehaviour
 {
-
-    #region Condition
     Vector2 playerCurrentPos;
     Vector2 currentCheckpointPos;
 
-    public void OnCheckpoint(GameObject col) // col : checkpoint yg mau diambil
+    #region Condition
+    public void OnCheckpoint(GameObject col)
     {
-        //Debug.Log("col itu adalah : " +  col.transform.position);
         Vector2 newCheckpointPosition = col.transform.position;
         currentCheckpointPos = newCheckpointPosition;
         SavePosition(newCheckpointPosition);
@@ -18,14 +16,13 @@ public class PlayerPositionHandler : MonoBehaviour
 
     public void OnEnemy()
     {
-        //Debug.Log("curr posss");
         ChangePlayerPos(currentCheckpointPos);
     }
 
     public void OnFinish(int newLevelUnlocked)
     {
-        GameManager.Instance.ChangeScene(0);
         GameManager.Instance.ChangeLevel(newLevelUnlocked);
+        GameManager.Instance.ChangeScene(0);
     }
 
     #endregion

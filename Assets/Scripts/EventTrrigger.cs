@@ -19,7 +19,7 @@ public class EventTrrigger : MonoBehaviour
     {
         if (col.tag == targetTag.ToString())
         {
-            Debug.Log(gameObject.tag + " collide with " + col.gameObject.tag);
+            //Debug.Log(gameObject.tag + " collide with " + col.gameObject.tag);
             onTrigger.Invoke(col.gameObject);
         }
     }

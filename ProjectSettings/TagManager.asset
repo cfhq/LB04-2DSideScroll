@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Background
   - Trap
+  - Checkpoint
+  - Gear
+  - Trigger
   layers:
   - Default
   - TransparentFX

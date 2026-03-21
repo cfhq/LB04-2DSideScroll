@@ -6,6 +6,7 @@ public class HorizontalMovement : MonoBehaviour
     public float distance;
     public float speed;
     private float originalPos;
+
     void Start()
     {
         originalPos = transform.position.x;
