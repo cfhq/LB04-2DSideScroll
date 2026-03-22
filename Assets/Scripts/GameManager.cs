@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
 
         startPanel.SetActive(false);
         levelsPanel.SetActive(true);
-        Debug.Log("OpenLevelsPanel: Start Panel deactivated, Levels Panel activated.");
     }
     #endregion
 
@@ -33,11 +32,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
     }
-
-    //public void GameManagerCheck()
-    //{
-    //    Debug.Log("GameManag is working!");
-    //}
 
     # endregion
 
@@ -104,7 +98,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeLevel(int newLevelUnlocked)
     {
-        newLevelUnlocked = Mathf.Clamp(newLevelUnlocked, 0, levelCurrent + 1);
+        newLevelUnlocked = levelCurrent + 1;
         levelCurrent = newLevelUnlocked;
         SaveLevel();
     }
