@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 261082484}
   - component: {fileID: 261082483}
   m_Layer: 5
-  m_Name: menuButton
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 285284721}
   - component: {fileID: 285284720}
   m_Layer: 5
-  m_Name: pauseButton
+  m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,7 +1131,7 @@ Transform:
   m_GameObject: {fileID: 617718680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.09, z: 0}
+  m_LocalPosition: {x: 0, y: -0.077, z: 0}
   m_LocalScale: {x: 1.9628, y: 1.6126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1351,7 +1351,7 @@ Transform:
   m_GameObject: {fileID: 795884610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.31, y: -4, z: 0}
+  m_LocalPosition: {x: 38.31, y: -4.07, z: 0}
   m_LocalScale: {x: 1.9628, y: 1.6126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 1046603156}
   m_Layer: 0
   m_Name: Rocks
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1792,7 +1792,7 @@ Transform:
   m_GameObject: {fileID: 1159932862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.95, y: -1.37, z: 0}
+  m_LocalPosition: {x: -7.95, y: -1.4, z: 0}
   m_LocalScale: {x: 9.218083, y: 8.184353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2969,7 +2969,7 @@ Transform:
   m_GameObject: {fileID: 1396855707}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.64, y: 3.89, z: 0}
+  m_LocalPosition: {x: 18.64, y: 3.912, z: 0}
   m_LocalScale: {x: 1.9628, y: 1.6126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3111,7 +3111,7 @@ GameObject:
   - component: {fileID: 1447686664}
   - component: {fileID: 1447686663}
   m_Layer: 5
-  m_Name: ResumeButton
+  m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3330,7 +3330,7 @@ Transform:
   m_GameObject: {fileID: 1656650013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.95, y: 1.86, z: 0}
+  m_LocalPosition: {x: 6.95, y: 1.914, z: 0}
   m_LocalScale: {x: 1.9628, y: 1.6126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3583,8 +3583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 0
-  buttonResume: {fileID: 1447686663}
-  buttonPause: {fileID: 285284720}
+  buttonResume: {fileID: 285284720}
+  buttonPause: {fileID: 1447686663}
   buttonMenu: {fileID: 261082483}
 --- !u!114 &1681414439
 MonoBehaviour:
@@ -4471,7 +4471,6 @@ GameObject:
   - component: {fileID: 1902457623}
   - component: {fileID: 1902457622}
   - component: {fileID: 1902457621}
-  - component: {fileID: 1902457620}
   - component: {fileID: 1902457624}
   m_Layer: 0
   m_Name: Finish
@@ -4480,34 +4479,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1902457620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902457618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d9aeebd02cd3544bbfb2702cddf5a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: 1
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1159932869}
-        m_TargetAssemblyTypeName: PlayerPositionHandler, Assembly-CSharp
-        m_MethodName: LoadPosition
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1902457621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4531,7 +4502,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4604,7 +4575,7 @@ Transform:
   m_GameObject: {fileID: 1902457618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.55, y: -1.4, z: 0}
+  m_LocalPosition: {x: 47.55, y: -1.423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4891,6 +4862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStart: 0
+  startPanel: {fileID: 0}
+  levelsPanel: {fileID: 0}
   isPaused: 0
   levelCurrent: 0
 --- !u!4 &2029835723

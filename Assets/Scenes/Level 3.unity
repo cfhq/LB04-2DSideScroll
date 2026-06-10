@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 261082484}
   - component: {fileID: 261082483}
   m_Layer: 5
-  m_Name: menuButton
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 285284721}
   - component: {fileID: 285284720}
   m_Layer: 5
-  m_Name: pauseButton
+  m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1542,7 +1542,7 @@ Transform:
   m_GameObject: {fileID: 633275560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
   m_LocalScale: {x: 1.9628, y: 1.6126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 790418419}
   m_Layer: 0
   m_Name: Obstacles_Traps
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2042,7 @@ Transform:
   m_GameObject: {fileID: 1061709455}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.98, y: 3.1, z: 0}
+  m_LocalPosition: {x: 14.98, y: 3.195, z: 0}
   m_LocalScale: {x: 0.8, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2110,7 +2110,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.10505766, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2120,7 +2120,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.75, y: 1.5}
+  m_Size: {x: 2.7594395, y: 1.5}
   m_EdgeRadius: 0
 --- !u!1 &1159932862
 GameObject:
@@ -2212,7 +2212,7 @@ Transform:
   m_GameObject: {fileID: 1159932862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.95, y: -1.37, z: 0}
+  m_LocalPosition: {x: -7.95, y: -1.4, z: 0}
   m_LocalScale: {x: 9.218083, y: 8.184353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3656,7 +3656,7 @@ GameObject:
   - component: {fileID: 1447686664}
   - component: {fileID: 1447686663}
   m_Layer: 5
-  m_Name: ResumeButton
+  m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3971,8 +3971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 0
-  buttonResume: {fileID: 1447686663}
-  buttonPause: {fileID: 285284720}
+  buttonResume: {fileID: 285284720}
+  buttonPause: {fileID: 1447686663}
   buttonMenu: {fileID: 261082483}
 --- !u!114 &1681414439
 MonoBehaviour:
@@ -4578,7 +4578,7 @@ GameObject:
   - component: {fileID: 1838790143}
   - component: {fileID: 1838790140}
   m_Layer: 0
-  m_Name: Stonepile 2
+  m_Name: NOT FINISH
   m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4593,7 +4593,7 @@ Transform:
   m_GameObject: {fileID: 1838790138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.09, y: -2.06, z: 0}
+  m_LocalPosition: {x: 52.09, y: -2.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4653,7 +4653,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: a51a3aebb43ac044989270407476b208, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4677,7 +4677,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7168540986364394743, guid: 88026070dd081b342906278cae12c431, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6226415, g: 0.17269489, b: 0.17269489, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4824,7 +4824,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1902457623}
   - component: {fileID: 1902457622}
-  - component: {fileID: 1902457621}
   - component: {fileID: 1902457620}
   - component: {fileID: 1902457624}
   m_Layer: 0
@@ -4857,35 +4856,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1902457621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902457618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d9aeebd02cd3544bbfb2702cddf5a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: 0
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1159932869}
-        m_TargetAssemblyTypeName: PlayerPositionHandler, Assembly-CSharp
-        m_MethodName: OnCheckpoint
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1902457618}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4958,7 +4929,7 @@ Transform:
   m_GameObject: {fileID: 1902457618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.36, y: 1.83, z: 0}
+  m_LocalPosition: {x: 65.36, y: 1.68, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4998,7 +4969,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009989768, y: -0.21311405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5008,7 +4979,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.18, y: 0.98}
+  m_Size: {x: 0.54731756, y: 0.5537719}
   m_EdgeRadius: 0
 --- !u!1 &1924438668
 GameObject:

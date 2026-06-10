@@ -13,6 +13,7 @@ public class UIMenu : MonoBehaviour
     {
         GameManager.Instance.CheckSaveFile();
         levelCurrent = GameManager.Instance.levelCurrent;
+        Debug.Log("[UIMenu] levelCurrent from GameManager: " + levelCurrent);
         AddChangeSceneListeners();
         DisableLevel();
     }
@@ -29,12 +30,12 @@ public class UIMenu : MonoBehaviour
 
     public void DisableLevel()
     {
+        Debug.Log("[UIMenu] DisableLevel running. levelCurrent = " + levelCurrent + ", button count = " + levelButtons.Length);
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i > levelCurrent)
-            {
-                levelButtons[i].interactable = false;
-            }
+            bool shouldEnable = i <= levelCurrent;
+            Debug.Log("[UIMenu] Button " + i + ": i <= levelCurrent (" + i + " <= " + levelCurrent + ") = " + shouldEnable);
+            levelButtons[i].interactable = shouldEnable;
         }
     }
     #endregion

@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,11 +18,9 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        //Debug.Log(horizontalInput);
 
         var x = horizontalInput * speed * Time.deltaTime;
         var xyz = new Vector3(x, 0f, 0f);

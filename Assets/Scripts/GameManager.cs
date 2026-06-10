@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         startPanel.SetActive(false);
         levelsPanel.SetActive(true);
     }
+
     #endregion
 
     #region GameManager
@@ -68,10 +69,18 @@ public class GameManager : MonoBehaviour
     LevelData levelData;
     public int levelCurrent;
 
+    private string saveFilePath => Application.dataPath + "/Level.json";
+
     public void CheckSaveFile()
     {
-        if (File.Exists(Application.dataPath + "/Level.json")) LoadLevel();
-        else SaveLevel();
+        if (File.Exists(saveFilePath))
+        {
+            LoadLevel();
+        }
+        else
+        {
+            SaveLevel();
+        }
     }
 
     private void SaveLevel()
@@ -79,18 +88,18 @@ public class GameManager : MonoBehaviour
         levelData = new LevelData();
         levelData.level = levelCurrent;
         string json = JsonUtility.ToJson(levelData, true);
-        File.WriteAllText(Application.dataPath + "/Level.json", json);
+        File.WriteAllText(saveFilePath, json);
     }
 
     private void LoadLevel()
     {
         string json;
-        json = File.ReadAllText(Application.dataPath + "/Level.json");
+        json = File.ReadAllText(saveFilePath);
         LevelData levelData = JsonUtility.FromJson<LevelData>(json);
         levelCurrent = levelData.level;
     }
 
-    private void CheckLevel()
+    public void CheckLevel()
     {
         LoadLevel();
         levelCurrent = levelData.level;
@@ -98,8 +107,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeLevel(int newLevelUnlocked)
     {
-        newLevelUnlocked = levelCurrent + 1;
-        levelCurrent = newLevelUnlocked;
+        levelCurrent = Mathf.Max(levelCurrent, newLevelUnlocked);
         SaveLevel();
     }
 
