@@ -37,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
         {
             var y = new Vector2(0f, jumpStength);
             rb.AddForce(y, ForceMode2D.Impulse);
-            //rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
 }
