@@ -6,6 +6,10 @@ A simple 2D side-scrolling platformer set in an enchanted forest.
 
 Oak Woods is a short platforming adventure where players journey through a magical woodland. Navigate platforms, avoid obstacles, and make your way through the forest as you explore its enchanting atmosphere.
 
+## Play the Game
+
+https://clalalalala.itch.io/oak-woods
+
 ## Features
 
 * 2D side-scrolling platformer gameplay
